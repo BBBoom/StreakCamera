@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="账号"
+            />
+        <EditText
+            android:id="@+id/account"
+            android:layout_height="wrap_content"
+            android:hint="在此输入您的账号"
+            android:maxLines="1"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="密码"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:hint="在此输入您的密码"
+            android:maxLines="1"
+            />
+    </TableRow>
+
+    <LinearLayout>
+        <Button
+            android:id="@+id/register"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            />
+        <Button
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            />
+    </LinearLayout>
+
+    <LinearLayout>
+        <EditText
+            android:id="@+id/serveridEdit"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="输入服务器IP以.分隔"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/portEdit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="输入端口号"
+        android:maxLines="1"
+        />
+    <LinearLayout>
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="连接服务器"/>
+    </LinearLayout>
+
+</TableLayout>
