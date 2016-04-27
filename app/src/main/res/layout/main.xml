@@ -6,6 +6,7 @@
     <!--tabHost的内容-->
     <FrameLayout
         android:id="@+id/realtabcontent"
+        android:background="#ff84d2ef"
         android:layout_width="fill_parent"
         android:layout_height="0dip"
         android:layout_weight="1" />

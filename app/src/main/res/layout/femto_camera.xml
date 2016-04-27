@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+    
+    <ScrollView
+        android:id="@+id/sv_femto_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+
+               <com.sc.streakcamera.util.MyGridView
+                   android:id="@+id/gv_switch"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/item_divide_selector"
+                   android:horizontalSpacing="2.5dip"
+                   android:numColumns="4"
+                   android:scrollbars="none"
+                   android:verticalSpacing="2.5dip"
+                />
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="8dp">
+               </FrameLayout>
+               <FrameLayout
+                   android:id="@+id/control_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+               </FrameLayout>
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp">
+
+               </FrameLayout>
+               <FrameLayout
+                   android:id="@+id/monitor_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/item_divide_selector">
+               </FrameLayout>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="我是文字"
+                   android:textSize="200dp"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="我是文字"
+                   android:textSize="200dp"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="我是文字"
+                   android:textSize="200dp"
+                   />
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

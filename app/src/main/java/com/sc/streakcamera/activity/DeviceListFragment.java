@@ -1,12 +1,10 @@
 package com.sc.streakcamera.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.sc.streakcamera.R;
 import com.viewpagerindicator.CirclePageIndicator;
@@ -16,14 +14,19 @@ import com.viewpagerindicator.PageIndicator;
  * Created by Administrator on 2016/4/13.
  */
 public class DeviceListFragment extends BaseSampleActivity {
-    TestFragmentAdapter mAdapter;
+    ViewPagerAdapter mAdapter;
     ViewPager mPager;
     PageIndicator mIndicator;
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mAdapter = new ViewPagerAdapter(getChildFragmentManager());
+    }
+
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.devicelist, null);
-        mAdapter = new TestFragmentAdapter(getChildFragmentManager());
+        View view = inflater.inflate(R.layout.devicelist, container,false);
+
 
         mPager = (ViewPager) view.findViewById(R.id.pager);
         mPager.setAdapter(mAdapter);

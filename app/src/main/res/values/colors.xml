@@ -68,6 +68,7 @@
     <color name="seat_divider">#ffd0d0d0</color>
     <color name="border_gray">#ffcccccc</color>
     <color name="transparent">#00000000</color>
+    <color name="midtransparent">#4a000000</color>
     <color name="faint_yellow">#fffffbf4</color>
     <color name="border_table">#ffd2d2d2</color>
     <color name="bg_table_title">#ffdedede</color>

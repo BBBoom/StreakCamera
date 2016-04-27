@@ -2,20 +2,22 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="#ff84d2ef"
+    android:background="@color/transparent"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="5dp"
         android:layout_gravity="center"
         android:textColor="#ffffffff"
         android:textSize="20dp"
-        android:text="条纹相机"/>
+        android:text="飞秒条纹相机"
+        android:textStyle="bold"/>
     <com.viewpagerindicator.CirclePageIndicator
         android:id="@+id/indicator"
-        android:padding="15dip"
+        android:padding="10dip"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
 

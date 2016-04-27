@@ -8,14 +8,11 @@ import com.viewpagerindicator.PageIndicator;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+
 /**
  * Created by Administrator on 2016/4/15.  ViewPagerIndicator  的BaseActivity
  */
@@ -23,7 +20,7 @@ import android.widget.Toast;
 public abstract class BaseSampleActivity extends Fragment {
     private static final Random RANDOM = new Random();
 
-    TestFragmentAdapter mAdapter;
+    ViewPagerAdapter mAdapter;
     ViewPager mPager;
     PageIndicator mIndicator;
 
